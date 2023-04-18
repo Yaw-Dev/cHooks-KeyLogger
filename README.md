@@ -4,7 +4,7 @@ This program will secretly run in the background while recording every keypress.
 It's packed with protections to ensure that it stays as undetected as possible.<br>
 All keypresses will be sent to your Discord Webhook every 40 seconds.<br>
 <br>
-<h2>Unique Features & Protections</h2>
+<h2>Features & Protections</h2>
 > Creates a "lockfile", preventing the program from running more than once and causing chaos.<br>
 > Uses <a href="https://medium.com/velotio-perspectives/an-introduction-to-asynchronous-programming-in-python-af0189a88bbb">Asynchronous Programming</a> (asyncio) to ensure that no key is missed.<br>
 > Attaches itself to the startup folder.<br>
