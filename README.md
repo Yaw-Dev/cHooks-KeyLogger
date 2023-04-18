@@ -1,4 +1,4 @@
-# cHooks-KeyLogger
+# cHooks™ KeyLogger | Paradise
 <b>cHooks KeyLogger</b> - A no compromises tool made with simplicity in mind.<br>
 This program will secretly run in the background while recording every keypress.<br>
 It's packed with protections to ensure that it stays as undetected as possible.<br>
