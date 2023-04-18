@@ -8,7 +8,8 @@ All keypresses will be sent to your Discord Webhook every 40 seconds.<br>
 > Creates a "lockfile", preventing the program from running more than once and causing chaos.<br>
 > Uses <a href="https://medium.com/velotio-perspectives/an-introduction-to-asynchronous-programming-in-python-af0189a88bbb">Asynchronous Programming</a> (asyncio) to ensure that no key is missed.<br>
 > Attaches itself to the startup folder.<br>
-> Requires BASE64 encoded webhook (reduces detections by ~10%).<br>
+> Requires BASE64 encoded webhook (reduces detections by ~10%).<br><br>
+> Currently working on a method to reduce detections more...
 <br>
 <h1>Setup & Usage</h1>
 1. Install Python (make sure to ADD PYTHON TO PATH)<br>
