@@ -1,0 +1,6 @@
+===== 23/06/2023 =====
+- Removed useless messagebox feature
+- Made .lockfile hidden (ctypes)
+- Added special treatment for `space` & `backspace`
+- Changed `.join` on `send_keys_to_discord` (more readable)
+- Cut VT detections in half (20 -> 9)
