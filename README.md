@@ -2,7 +2,7 @@
 <b>cHooks KeyLogger</b> - A no compromises tool made with simplicity in mind.<br>
 This program will secretly run in the background while recording every keypress.<br>
 It's packed with protections to ensure that it stays as undetected as possible.<br>
-All keypresses will be sent to your Discord Webhook every 40 seconds.<br>
+All keypresses will be sent to your Discord Webhook every 20 seconds.<br>
 <br>
 <h2>Features & Protections</h2>
 > Creates a ".lockfile", preventing the program from running more than once and causing chaos.<br>
