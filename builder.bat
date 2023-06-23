@@ -19,7 +19,7 @@ if [%a%]==[] (
 if [%a%] NEQ [] (
     echo.
     echo Name is: %a%
-    pyinstaller --noconfirm --onefile --icon "NONE" --hidden-import "os" --hidden-import "socket" --hidden-import "shutil" --hidden-import "sys" --hidden-import "tkinter" --hidden-import "keyboard" --hidden-import "asyncio" --hidden-import "portalocker" --hidden-import "base64" --hidden-import "requests" --hidden-import "time" --hidden-import "discord.embeds" --hidden-import "discord" -n %a% main.pyw
+    pyinstaller --noconfirm --onefile --icon "NONE" --hidden-import "os" --hidden-import "socket" --hidden-import "shutil" --hidden-import "sys" --hidden-import "tkinter" --hidden-import "keyboard" --hidden-import "asyncio" --hidden-import "portalocker" --hidden-import "base64" --hidden-import "ctypes" --hidden-import "requests" --hidden-import "time" --hidden-import "discord.embeds" --hidden-import "discord" -n %a% main.pyw
     rmdir /s /q __pycache__
     rmdir /s /q build
     del /f / s /q %a%.spec
