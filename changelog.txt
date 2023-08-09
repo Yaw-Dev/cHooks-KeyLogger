@@ -1,3 +1,7 @@
+===== 09/08/2023 =====
+- Added better instance handling (no more lockfile)
+- Added upx.exe (smaller size & less detections)
+
 ===== 23/06/2023 =====
 - Removed useless messagebox feature
 - Made .lockfile hidden (ctypes)
