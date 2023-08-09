@@ -3,4 +3,4 @@ discord.embeds
 keyboard
 asyncio
 requests
-portalocker
+psutil
